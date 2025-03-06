@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Mood Recipe Finder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Source Sans Pro', sans-serif;
+            background-color: #1a1625;
+            scroll-behavior: smooth;
+        }
+        .playfair {
+            font-family: 'Playfair Display', serif;
+        }
+        .glass-effect {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen text-gray-100">
+    <!-- Top Banner -->
+    <div class="bg-[#2d1b69] text-white text-center py-2 px-4">
+        <p class="text-sm">🍽️ Your perfect recipe awaits</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="glass-effect shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4">
+                <a href="/" class="flex items-center space-x-2 text-2xl font-bold playfair text-[#ff6b6b] hover:text-[#4cc9f0] transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                    </svg>
+                    <span class="bg-gradient-to-r from-[#ff6b6b] to-[#4cc9f0] bg-clip-text text-transparent">Mood Recipes</span>
+                </a>
+                <div class="flex space-x-8">
+                    <a href="/" class="text-gray-300 hover:text-[#ff6b6b] transition-colors font-medium">Home</a>
+                    <a href="/about" class="text-[#ff6b6b] font-medium">About Us</a>
+                    <a href="/recipes" class="text-gray-300 hover:text-[#ff6b6b] transition-colors font-medium">All Recipes</a>
+                    <a href="/contact" class="text-gray-300 hover:text-[#ff6b6b] transition-colors font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- About Content -->
+    <div class="container mx-auto px-4 py-12">
+        <div class="max-w-4xl mx-auto">
+            <div class="glass-effect rounded-xl shadow-xl p-8">
+                <h1 class="text-4xl font-bold text-[#ff6b6b] mb-8 playfair">About Mood Recipe Finder</h1>
+                
+                <div class="space-y-6">
+                    <section>
+                        <h2 class="text-2xl font-semibold text-[#ff6b6b] mb-4 playfair">Our Story</h2>
+                        <p class="text-gray-300 leading-relaxed">
+                            Mood Recipe Finder was born from a simple idea: food has the power to influence our emotions and well-being. We believe that what we eat can significantly impact how we feel, and we're here to help you discover recipes that match your current mood.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-semibold text-[#ff6b6b] mb-4 playfair">Our Mission</h2>
+                        <p class="text-gray-300 leading-relaxed">
+                            Our mission is to provide personalized recipe recommendations that not only satisfy your taste buds but also uplift your spirits. Whether you're feeling happy, sad, excited, or tired, we've curated a collection of recipes that can enhance your mood and bring joy to your cooking experience.
+                        </p>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-semibold text-[#ff6b6b] mb-4 playfair">How It Works</h2>
+                        <div class="space-y-4">
+                            <p class="text-gray-300 leading-relaxed">
+                                Our intelligent system analyzes your mood through natural language processing and matches you with recipes that align with your emotional state. Each recipe is carefully selected based on:
+                            </p>
+                            <ul class="list-disc list-inside text-gray-300 space-y-2">
+                                <li>Mood-appropriate ingredients and flavors</li>
+                                <li>Preparation time and complexity</li>
+                                <li>Nutritional balance</li>
+                                <li>Cultural and seasonal relevance</li>
+                            </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-semibold text-[#ff6b6b] mb-4 playfair">Our Recipe Collection</h2>
+                        <p class="text-gray-300 leading-relaxed">
+                            We maintain a diverse collection of recipes categorized by mood:
+                        </p>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-4">
+                            <div class="glass-effect p-4 rounded-lg">
+                                <h3 class="text-xl font-semibold text-[#ff6b6b] mb-2">Happy</h3>
+                                <p class="text-gray-300">Bright, colorful, and energizing recipes to maintain your positive vibes.</p>
+                            </div>
+                            <div class="glass-effect p-4 rounded-lg">
+                                <h3 class="text-xl font-semibold text-[#ff6b6b] mb-2">Sad</h3>
+                                <p class="text-gray-300">Comforting and warm recipes to lift your spirits.</p>
+                            </div>
+                            <div class="glass-effect p-4 rounded-lg">
+                                <h3 class="text-xl font-semibold text-[#ff6b6b] mb-2">Excited</h3>
+                                <p class="text-gray-300">Bold, spicy, and adventurous recipes to match your energy.</p>
+                            </div>
+                            <div class="glass-effect p-4 rounded-lg">
+                                <h3 class="text-xl font-semibold text-[#ff6b6b] mb-2">Tired</h3>
+                                <p class="text-gray-300">Quick, easy, and energizing recipes to help you recharge.</p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section>
+                        <h2 class="text-2xl font-semibold text-[#ff6b6b] mb-4 playfair">Join Our Community</h2>
+                        <p class="text-gray-300 leading-relaxed">
+                            We're constantly growing and improving our recipe collection. Feel free to explore our recipes, try them out, and share your experiences. Your feedback helps us make Mood Recipe Finder even better for everyone.
+                        </p>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="border-t border-[#2d1b69] mt-20">
+        <div class="container mx-auto px-4 py-12">
+            <div class="text-center">
+                <p class="text-gray-400 text-sm">&copy; 2024 Mood Recipes. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
